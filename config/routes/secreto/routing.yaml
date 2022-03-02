@@ -1,0 +1,3 @@
+secretUrl:
+    path:  /secretUrl
+    controller: App\Controller\MyController:secretUrl
