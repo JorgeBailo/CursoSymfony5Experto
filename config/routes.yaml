@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+practice42:
+  path:     /articles/{_locale}/{year}/{slug}.{_format}
+  defaults: { _controller: App\Controller\MyController:practice42, _format: html }
+  requirements:
+      _locale:  en|es
+      _format:  html|rss
+      year:     \d+
